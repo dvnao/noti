@@ -14,48 +14,44 @@ body {
   font-family: var(--bs-body-font-family);
 }
 
-
 form {
-  justify-content:center;
+  justify-content: center;
 }
 
 form .form-control {
-  border-radius:4px;
-  box-shadow:none;
-  outline:none;
-  color:inherit;
-  text-indent:9px;
-  height:45px;
-  margin-right:10px;
-  min-width:250px;
-  color: red;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+  text-indent: 9px;
+  height: 45px;
+  margin-right: 10px;
+  min-width: 250px;
 }
 
 form .btn {
-  padding:16px 32px;
-  border:none;
-  background:none;
-  box-shadow:none;
-  text-shadow:none;
-  opacity:0.9;
-  text-transform:uppercase;
-  font-weight:bold;
-  font-size:13px;
-  letter-spacing:0.4px;
-  line-height:1;
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
 }
 
 form .btn:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 form .btn:active {
-  transform:translateY(1px);
+  transform: translateY(1px);
 }
 
 form .btn-primary {
-  background-color:#055ada !important;
-  color:#fff;
-  outline:none !important;
+  background-color: #055ada !important;
+  color: #fff;
+  outline: none !important;
 }
-

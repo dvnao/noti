@@ -33,9 +33,7 @@
               d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
             />
           </svg>
-          <h1 class="text-5xl flex items-center gap-2">
-            [Project Name Here]
-          </h1>
+          <h1 class="text-5xl flex items-center gap-2">[Project Name Here]</h1>
           <p class="text-xs flex items-center gap-2 text-muted">
             [Project Description Here]
           </p>
@@ -52,19 +50,26 @@
             <div class="col-auto">
               <label for="staticEmail" class="visually-hidden">Email</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
                 id="staticEmail"
                 placeholder="Enter your email"
               />
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">
+              <button
+                type="button"
+                class="btn btn-primary mb-3"
+                id="load1"
+                data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order"
+              >
                 Subscribe
               </button>
             </div>
           </form>
-          <p class="flex flex-col items-bottom gap-2 text-muted">Built with love by [Your Name Here]</p>
+          <p class="flex flex-col items-bottom gap-2 text-muted">
+            Built with ❤️ by [Your Name Here]
+          </p>
         </div>
       </div>
     </div>
