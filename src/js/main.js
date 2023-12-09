@@ -16,14 +16,14 @@ document.querySelector("#load1").addEventListener("click", async (e) => {
     button.classList.remove("btn-primary");
     button.classList.add("btn-danger");
     button.textContent = "Already Sent";
-    radiatebackground("alreadySent");
-    disablebutton();
+    // radiatebackground("alreadySent");
+    // disablebutton();
   } else {
     button.classList.remove("btn-primary");
     button.classList.add("btn-success");
     button.textContent = "Success!";
-    radiatebackground("success");
-    disablebutton();
+    // radiatebackground("success");
+    // disablebutton();
   }
 
   setTimeout(() => {
@@ -31,7 +31,7 @@ document.querySelector("#load1").addEventListener("click", async (e) => {
     button.classList.remove("btn-danger", "btn-success");
     button.classList.add("btn-primary");
     button.textContent = "Subscribe";
-    disablebutton();
+    //  disablebutton();
   }, 3000);
 });
 
