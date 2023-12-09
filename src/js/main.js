@@ -17,11 +17,13 @@ document.querySelector("#load1").addEventListener("click", async (e) => {
     button.classList.add("btn-danger");
     button.textContent = "Already Sent";
     radiatebackground("alreadySent");
+    disablebutton();
   } else {
     button.classList.remove("btn-primary");
     button.classList.add("btn-success");
     button.textContent = "Success!";
     radiatebackground("success");
+    disablebutton();
   }
 
   setTimeout(() => {
@@ -29,8 +31,13 @@ document.querySelector("#load1").addEventListener("click", async (e) => {
     button.classList.remove("btn-danger", "btn-success");
     button.classList.add("btn-primary");
     button.textContent = "Subscribe";
+    disablebutton();
   }, 3000);
 });
+
+function disablebutton() {
+  document.getElementById("load1").disabled = true;
+}
 
 // Simulated asynchronous function to check email in the database
 function checkEmailInDatabase(email) {
