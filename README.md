@@ -11,17 +11,23 @@ To get started, follow these instructions:
 
 ```bash
 # Clone or fork the repository
-+ git clone https://github.com/divinewrites/noti.git
+git clone https://github.com/divinewrites/noti.git
 
 # Navigate to the project directory
-+ cd noti
+cd noti
 
 # Install the required packages
-+ npm install
+npm install
+```
+
+To run the web-app:
+
+```bash
+npm start
 ```
 
 ## 🌟 Showcase
-Current preview of the webapp:
+Here's a glimpse of the current state of the web app:
 ![Showcase](showcase.png)
 
 ## ✍️ Contributing
