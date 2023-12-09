@@ -16,11 +16,12 @@ document.querySelector("#load1").addEventListener("click", async (e) => {
     button.classList.remove("btn-primary");
     button.classList.add("btn-danger");
     button.textContent = "Already Sent";
+    radiatebackground("alreadySent");
   } else {
     button.classList.remove("btn-primary");
     button.classList.add("btn-success");
     button.textContent = "Success!";
-    radiatebackground();
+    radiatebackground("success");
   }
 
   setTimeout(() => {
@@ -41,15 +42,28 @@ function checkEmailInDatabase(email) {
   });
 }
 
-function radiatebackground() {
-  var colors = new Array(
-    [62, 35, 255],
-    [60, 255, 60],
-    [255, 35, 98],
-    [45, 175, 230],
-    [255, 0, 255],
-    [255, 128, 0]
-  );
+function radiatebackground(identifier) {
+  var colors;
+
+  if (identifier === "subscribe" || identifier === "success") {
+    colors = [
+      [32, 15, 128],
+      [30, 128, 30],
+      [128, 15, 49],
+      [22, 87, 115],
+      [128, 0, 128],
+      [128, 64, 0]
+    ];
+  } else if (identifier === "alreadySent" || identifier === "error") {
+    colors = [
+      [128, 15, 49],
+      [30, 128, 30],
+      [32, 15, 128],
+      [22, 87, 115],
+      [128, 0, 128],
+      [128, 64, 0]
+    ];
+  }
 
   var step = 0;
   var colorIndices = [0, 1, 2, 3];
