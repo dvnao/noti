@@ -11,7 +11,7 @@ To get started, follow these instructions:
 
 ```bash
 # Clone or fork the repository
-+ git clone https://github.com/your-username/noti.git
++ git clone https://github.com/divinewrites/noti.git
 
 # Navigate to the project directory
 + cd noti
