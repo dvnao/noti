@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div
+      class="container d-flex align-items-center justify-content-center vh-100"
+    >
+      <div
+        class="h-screen w-screen flex flex-col text-center items-center justify-center gap-4 p-2"
+      >
+        <div class="flex flex-col items-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="#436EEE"
+            class="bi bi-music-note"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"
+            />
+            <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+            <path
+              d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"
+            />
+          </svg>
+          <h1 class="text-5xl flex items-center gap-2">
+            [Project Name Here]
+          </h1>
+          <p class="text-xs flex items-center gap-2 text-muted">
+            [Project Description Here]
+          </p>
+        </div>
+
+        <br />
+        <div class="flex flex-col items-center gap-2">
+          <p class="text-xs flex items-center gap-2 text-muted">
+            Use the form below to sign up for a notification when it's
+            available.
+          </p>
+
+          <form class="row g-3 justify-content-center">
+            <div class="col-auto">
+              <label for="staticEmail" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="staticEmail"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">
+                Subscribe
+              </button>
+            </div>
+          </form>
+          <p class="flex flex-col items-bottom gap-2 text-muted">Built with love by [Your Name Here]</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
